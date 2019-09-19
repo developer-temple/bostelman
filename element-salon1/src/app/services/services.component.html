@@ -1,0 +1,38 @@
+<section class="services position-relative">
+  <button (click)="onServiceClicked()" class="close-button" [@closeButtonTrigger]="buttonState">X</button>
+  <div class="details">
+    <h2>{{ name }}</h2>
+    <p>{{ description }}</p>
+    <p>${{ priceRange.min }} - {{priceRange.max }}</p>
+    <a href='#contact' class="position-absolute link">{{ linkLabel }}</a>
+  </div>
+  <h1 class="heading mb-0">Services</h1>
+  <div class="services-grid">
+    <div class="row no-gutters">
+      <div (click)="onServiceClicked(0)" class="service col-6" [@leftServiceTrigger]="state">
+        <p>{{ services[0] }}</p>
+      </div>
+      <div (click)="onServiceClicked(1)" class="service col-6" [@rightServiceTrigger]="state">
+        <p>{{ services[1] }}</p>
+      </div>
+      <div (click)="onServiceClicked(2)" class="service col-6" [@leftServiceTrigger]="state">
+        <p>{{ services[2] }}</p>
+      </div>
+      <div (click)="onServiceClicked(3)" class="service col-6" [@rightServiceTrigger]="state">
+        <p>{{ services[3] }}</p>
+      </div>
+      <div (click)="onServiceClicked(4)" class="service col-6" [@leftServiceTrigger]="state">
+        <p>{{ services[4] }}</p>
+      </div>
+      <div (click)="onServiceClicked(5)" class="service col-6" [@rightServiceTrigger]="state">
+        <p>{{ services[5] }}</p>
+      </div>
+      <div (click)="onServiceClicked(6)" class="service col-6" [@leftServiceTrigger]="state">
+        <p>{{ services[6] }}</p>
+      </div>
+      <div (click)="onServiceClicked(7)" class="service col-6" [@rightServiceTrigger]="state">
+        <p>{{ services[7] }}</p>
+      </div>
+    </div>
+  </div>
+</section>

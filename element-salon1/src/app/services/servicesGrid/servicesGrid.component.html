@@ -1,0 +1,7 @@
+<div class="services-grid">
+  <div class="row no-gutters">
+    <div class="service col-6" *ngFor='let service of services' [@serviceTrigger]="state">
+      <p>{{service}}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+@import '../../variables';
+.toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  
+  z-index: 1000;
+  padding: .5rem;
+  color: $palette-purple;
+  background-color: transparent;
+}
+
+.toolbar.opaque {
+  background-color: white;
+}

@@ -1,0 +1,20 @@
+<form (ngSubmit)="onSubmit(f)" #f="ngForm" class="form">
+  <p>Hi Kelly,</p>
+  <label for="service">I'm interested in</label>
+  <select name="service" class="form-control mb-3" placeholder="Choose A Service" ngModel>
+    <option *ngFor="let service of services" [value]="service.value">{{ service.label }}</option>
+  </select>
+  <label for="timePreference">I'd like to come in</label>
+  <input type="text" name="timePreference" class="form-control mb-3" placeholder="Monday @ 3" ngModel/>
+  <label for="timeSecondPreference">or maybe</label>
+  <input type="text" name="timeSecondPreference" class="form-control mb-3" placeholder="One afternoon later this week" ngModel/>
+  <label for="phone">You can reach me at</label>
+  <input type="text" name="phone" class="form-control mb-3" placeholder="419-555-0012" ngModel/>
+  <label for="email">Or at</label>
+  <input type="email" name="email" class="form-control mb-3" placeholder="i@me.com" ngModel required email/>
+  <label for="name">Thanks,</label>
+  <input type="text" name="name" class="form-control mb-3" placeholder="Susie Brown" ngModel required>
+  <label for="message">P.S.</label>
+  <textarea name="message" class="form-control mb-3" placeholder="Enter Message..." ngModel></textarea>
+  <button class="btn btn-dark" type="submit">Send Message</button>
+</form>

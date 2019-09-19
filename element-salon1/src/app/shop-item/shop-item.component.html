@@ -1,0 +1,16 @@
+<!-- <div class="shop-item">
+  <div class="d-flex">
+      <img class="img-fluid mr-1" [src]="item.image.src" [alt]="item.image.alt">
+      <p class="m-0">{{truncatedDescription}}</p>
+  </div>
+  <div class="d-flex justify-content-between">
+    
+  </div>
+</div> -->
+<div class="shop-item">
+  <img class="img-fluid" [src]="item.image.src" alt="..."/>
+  <div class="d-flex justify-content-between px-3">
+      <p>{{item.name}}</p>
+  </div>
+  <p class="price d-flex align-items-center"><span>$</span><span>{{item.price}}</span></p>
+</div>

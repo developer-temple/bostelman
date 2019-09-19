@@ -1,0 +1,74 @@
+@import '../../variables';
+
+.services {
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  background-color: rgb(255, 94, 91);
+  position: relative;
+  & .close-button {
+    position: absolute;
+    top: calc(100px + 1rem);
+    right: 1rem;
+    border: none;
+    background-color: white;
+    color: $palette-red;
+    border-radius: 50%;
+    z-index: 10;
+  }
+  & .details {
+    height: calc(100% - 100px);
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    padding: 20vh 1rem 0 1rem;
+    & h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+    & p {
+      text-align: center;
+      font-size: 1.3rem;
+    }
+    & .link {
+      left: 50%;
+      bottom: 1rem;
+      transform: translateX(-50%);
+      z-index: 100;
+      color: $palette-white;
+    }
+    & .link:hover {
+      color: darken($palette-white, 15%);
+    }
+  }
+  & .heading {
+    height: 100px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  & .services-grid {
+    height: calc(100% - 100px);
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    & .row {
+      height: 100%;
+      & .service {
+        background-color: rgb(255, 94, 91);
+        border: 1px solid $palette-white;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        height: 25%;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}

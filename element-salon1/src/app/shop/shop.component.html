@@ -1,0 +1,17 @@
+<section class="shop">
+  <h1>Shop</h1>
+  <div class="row">
+    <div class="col-6">
+      <button class="button">Hair</button>
+    </div>
+    <div class="col-6">
+      <button class="button">Body</button>
+    </div>
+
+    <div class="row px-3">
+      <div (click)="onItemClicked()" class="col-6 mb-3" *ngFor="let item of items" [@itemTrigger]="animState">
+        <app-shop-item  [item]='item'></app-shop-item>
+      </div>
+    </div>
+  </div>
+</section>

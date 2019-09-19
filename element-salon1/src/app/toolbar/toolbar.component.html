@@ -1,0 +1,16 @@
+<header [ngClass]="className"> 
+    <div class="row justify-content-between align-items-center">
+      <div class="col-4">
+        <div class="d-flex justify-content-around align-items-center">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fas fa-phone"></i>
+        </div>
+      </div>
+      <div class="col-6 d-flex justify-content-end align-items-center">
+          <i class="fas fa-shopping-cart mr-1"></i>
+          <span>{{ cart.count }}</span>
+      </div>
+    </div>
+</header>

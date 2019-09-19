@@ -1,0 +1,15 @@
+.shop-item {
+  border: 1px solid black;
+  border-radius: 0 0 5px 5px;
+  background-color: white;
+  position: relative;
+  & .price {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .5rem;
+    font-size: 1.2rem;
+    background-color: white;
+    border-radius: 0 0 0 5px;
+  }
+}

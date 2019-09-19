@@ -1,0 +1,31 @@
+@import '../../variables';
+
+.shop {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(57, 115, 103);
+  padding: 1rem;
+  // overflow-y: scroll;
+  & h1 {
+    text-align: center;
+  color: white;
+  }
+  & .button {
+    background: transparent;
+    font-size: 2rem;
+    color: $palette-white;
+    display: block;
+    width: 100%;
+    border: none;
+  }
+  & ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    padding: 1rem;
+    & li {
+      width: calc(50% - 3rem);
+    }
+  }
+}
